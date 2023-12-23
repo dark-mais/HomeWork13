@@ -1,11 +1,11 @@
 public class Book {
     private String nameBook;
-    private Author authorBook;
+    private Author author;
     private int agePublicBook;
 
-    public Book(String nameBook, Author authorBook, int agePublicBook) {
+    public Book(String nameBook, Author author, int agePublicBook) {
         this.nameBook = nameBook;
-        this.authorBook = authorBook;
+        this.author = author;
         this.agePublicBook = agePublicBook;
     }
 
@@ -18,6 +18,7 @@ public class Book {
     public int getAgePublicBook() {
         return this.agePublicBook;
     }
+    public Author getAuthor() {return author;}
     public void setAgePublicBook(int agePublicBook) {
         this.agePublicBook = agePublicBook;
     }

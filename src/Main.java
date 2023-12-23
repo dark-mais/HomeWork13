@@ -3,6 +3,7 @@ public class Main {
         Author maksFray = new Author("Maks", "Fray");
         Book myRagnarok = new Book("My Ragnarok", maksFray, 2018);
         System.out.println("Book - " + myRagnarok.getNameBook());
+        System.out.println("Book - author " + myRagnarok.getAuthor());
         System.out.println("Author - " + maksFray);
         System.out.println("Age public - " + myRagnarok.getAgePublicBook() + "\n");
 
@@ -13,5 +14,6 @@ public class Main {
         System.out.println("Age public - " + harryPotter.getAgePublicBook());
         harryPotter.setAgePublicBook(2010);
         System.out.println("Age public - " + harryPotter.getAgePublicBook());
+        System.out.println(myRagnarok.equals(harryPotter));
     }
 }
